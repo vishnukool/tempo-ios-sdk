@@ -21,19 +21,19 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Tempo-Platform/tempo-ios-sdk-public'
+  s.homepage         = 'https://github.com/vishnukool/tempo-ios-sdk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Vishnu' => '857006+vkkong@users.noreply.github.com' }
   
-  s.source           = { :git => 'https://github.com/Tempo-Platform/tempo-ios-sdk-public.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/vishnukool/tempo-ios-sdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  spec.source_files  = "TempoSDK", "TempoSDK/**/*.{h,m,swift}"
-  spec.exclude_files = "TempoSDK/Exclude"
-  spec.swift_version = "5.6"
+  s.source_files  = "TempoSDK", "TempoSDK/**/*.{h,m,swift}"
+  s.exclude_files = "TempoSDK/Exclude"
+  s.swift_version = "5.6"
   
   # s.resource_bundles = {
   #   'TempoSDK' => ['TempoSDK/Assets/*.png']
