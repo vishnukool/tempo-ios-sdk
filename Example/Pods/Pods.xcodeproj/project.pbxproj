@@ -59,7 +59,7 @@
 		9EBF875C63B5288EE84EE35496C8268D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A66B1C1BA5052C491BD10744754D174E /* Pods-TempoSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TempoSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		AE304BEF69A8E1751F52FECDC5D72295 /* Pods-TempoSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TempoSDK_Example-Info.plist"; sourceTree = "<group>"; };
-		BBC8AF6BB10D7448C8E2494B485B34F8 /* Pods_TempoSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempoSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC8AF6BB10D7448C8E2494B485B34F8 /* TempoSDKTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TempoSDKTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F0FCCDF79F6787C0201554D614367F /* Pods-TempoSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TempoSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CFD995AFA2E3D2B9BA7A5A16CBE81C6D /* TempoSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TempoSDK-dummy.m"; sourceTree = "<group>"; };
 		FDE1344643540CEE1B3DC6BBB76C329A /* Pods-TempoSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TempoSDK_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 		C59B783BA8996C87F914D3E82F4DB553 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBC8AF6BB10D7448C8E2494B485B34F8 /* Pods_TempoSDK_Example.framework */,
+				BBC8AF6BB10D7448C8E2494B485B34F8 /* TempoSDKTester.framework */,
 				6F0E4EA16FA523A166C59CD7EB8E4C58 /* TempoSDK.framework */,
 			);
 			name = Products;
@@ -249,9 +249,9 @@
 			productReference = 6F0E4EA16FA523A166C59CD7EB8E4C58 /* TempoSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6761FCAD06CD244288ABC2AF79E2E16F /* Pods-TempoSDK_Example */ = {
+		6761FCAD06CD244288ABC2AF79E2E16F /* TempoSDKTester */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AC9C103BC54C4D6D84535D599E7AB5F /* Build configuration list for PBXNativeTarget "Pods-TempoSDK_Example" */;
+			buildConfigurationList = 9AC9C103BC54C4D6D84535D599E7AB5F /* Build configuration list for PBXNativeTarget "TempoSDKTester" */;
 			buildPhases = (
 				46E08D747338D731D03DFAD0032DD156 /* Headers */,
 				D1C2FDABC98355C326DF63C2F1472316 /* Sources */,
@@ -263,9 +263,9 @@
 			dependencies = (
 				F7DB7EB0958EE86E198FB0F58E17953E /* PBXTargetDependency */,
 			);
-			name = "Pods-TempoSDK_Example";
+			name = TempoSDKTester;
 			productName = Pods_TempoSDK_Example;
-			productReference = BBC8AF6BB10D7448C8E2494B485B34F8 /* Pods_TempoSDK_Example.framework */;
+			productReference = BBC8AF6BB10D7448C8E2494B485B34F8 /* TempoSDKTester.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -295,7 +295,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6761FCAD06CD244288ABC2AF79E2E16F /* Pods-TempoSDK_Example */,
+				6761FCAD06CD244288ABC2AF79E2E16F /* TempoSDKTester */,
 				452BF17928B1327D885539AD22EC7515 /* TempoSDK */,
 			);
 		};
@@ -472,7 +472,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempoplatform.sdktester;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -540,7 +540,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempoplatform.sdktester;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -633,7 +633,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AC9C103BC54C4D6D84535D599E7AB5F /* Build configuration list for PBXNativeTarget "Pods-TempoSDK_Example" */ = {
+		9AC9C103BC54C4D6D84535D599E7AB5F /* Build configuration list for PBXNativeTarget "TempoSDKTester" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				72B15F3A8645762CDA89CFD811C9460A /* Debug */,

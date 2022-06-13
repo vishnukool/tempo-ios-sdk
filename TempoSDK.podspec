@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TempoSDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TempoSDK.'
+  s.version          = '0.0.3'
+  s.summary          = 'Tempo iOS SDK.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,16 +21,19 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Vishnu/TempoSDK'
+  s.homepage         = 'https://github.com/Tempo-Platform/tempo-ios-sdk-public'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Vishnu' => '857006+vkkong@users.noreply.github.com' }
-  s.source           = { :git => 'https://github.com/Vishnu/TempoSDK.git', :tag => s.version.to_s }
+  
+  s.source           = { :git => 'https://github.com/Tempo-Platform/tempo-ios-sdk-public.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'TempoSDK/Classes/**/*'
+  spec.source_files  = "TempoSDK", "TempoSDK/**/*.{h,m,swift}"
+  spec.exclude_files = "TempoSDK/Exclude"
+  spec.swift_version = "5.6"
   
   # s.resource_bundles = {
   #   'TempoSDK' => ['TempoSDK/Assets/*.png']
