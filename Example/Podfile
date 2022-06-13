@@ -1,13 +1,8 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '15.5'
 
-target 'TempoSDK_Example' do
-  pod 'TempoSDK', :path => '../'
-
-  target 'TempoSDK_Tests' do
-    inherit! :search_paths
-
-    
-  end
+target 'TempoSDKTester' do
+#  pod 'TempoSDK', :path => '../'
+  pod 'TempoSDK', '~> 0.0.5'
 end

@@ -23,7 +23,7 @@ public class TempoInterstitialView: UIViewController, WKNavigationDelegate, WKSc
     }
     
     private func loadUrl() {
-        let url = URL(string: "https://brands.tempoplatform.com/campaign/1/ios")!
+        let url = URL(string: "https://brands.tempoplatform.com")!
         self.webView.load(URLRequest(url: url))
     }
     

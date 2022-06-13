@@ -1,37 +1,39 @@
-# macOS
+# Mac OS X Finder
 .DS_Store
 
-# Xcode
-build/
-*.pbxuser
-!default.pbxuser
+# Private Keys
+*.pem
+
+# Xcode legacy
+*.mode1
 *.mode1v3
-!default.mode1v3
 *.mode2v3
-!default.mode2v3
+*.perspective
 *.perspectivev3
-!default.perspectivev3
+*.pbxuser
+
+# Xcode
 xcuserdata/
-*.xccheckout
-profile
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
+project.xcworkspace/
+DerivedData/
 
-# Bundler
-.bundle
+# build products
+build/
+*.[oa]
 
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
+# repositories
+.hg
+.svn
+CVS
 
-Carthage/Build
+# automatic backup files
+*~.nib
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
 
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-# 
-# Note: if you ignore the Pods directory, make sure to uncomment
-# `pod install` in .travis.yml
-#
-# Pods/
+# Cocoapods
+Pods/
